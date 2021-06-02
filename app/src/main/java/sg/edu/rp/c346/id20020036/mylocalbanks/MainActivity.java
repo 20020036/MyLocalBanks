@@ -107,8 +107,10 @@ public class MainActivity extends AppCompatActivity {
             }
             else if(item.getItemId() == 2)
             {
-                Toast.makeText(MainActivity.this, "'Contact the Bank' chosen", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "'Toggle Favourite' chosen", Toast.LENGTH_SHORT).show();
                 tvDBS.setTextColor(Color.parseColor("#FFFF0000"));
+                tvOCBC.setTextColor(Color.parseColor("#FF000000"));
+                tvUOB.setTextColor(Color.parseColor("#FF000000"));
             }
         }
         else if(clicked.equalsIgnoreCase("ocbc"))
@@ -130,7 +132,9 @@ public class MainActivity extends AppCompatActivity {
             else if(item.getItemId() == 2)
             {
                 Toast.makeText(MainActivity.this, "'Toggle Favourite' chosen", Toast.LENGTH_SHORT).show();
-                tvDBS.setTextColor(Color.parseColor("#FFFF0000"));
+                tvOCBC.setTextColor(Color.parseColor("#FFFF0000"));
+                tvDBS.setTextColor(Color.parseColor("#FF000000"));
+                tvUOB.setTextColor(Color.parseColor("#FF000000"));
             }
         }
         else if(clicked.equalsIgnoreCase("uob"))
@@ -151,8 +155,10 @@ public class MainActivity extends AppCompatActivity {
             }
             else if(item.getItemId() == 2)
             {
-                Toast.makeText(MainActivity.this, "'Contact the Bank' chosen", Toast.LENGTH_SHORT).show();
-                tvDBS.setTextColor(Color.parseColor("#FFFF0000"));
+                Toast.makeText(MainActivity.this, "'Toggle Favourite' chosen", Toast.LENGTH_SHORT).show();
+                tvUOB.setTextColor(Color.parseColor("#FFFF0000"));
+                tvOCBC.setTextColor(Color.parseColor("#FF000000"));
+                tvDBS.setTextColor(Color.parseColor("#FF000000"));
             }
         }
         return super.onContextItemSelected(item);
